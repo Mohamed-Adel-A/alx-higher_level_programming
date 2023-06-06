@@ -1,4 +1,5 @@
 #include "lists.h"
+#include <stdio.h>
 /**
  * check_cycle - check_cycle
  * @list: list
@@ -13,9 +14,11 @@ int check_cycle(listint_t *list)
 		return (0);
 	while (list != NULL)
 	{
+		printf("(l= %d)\n", list->n);
 		node = list->next;
 		while (node != NULL)
 		{
+			printf("(n= %d)\n", node->n);
 			if (list == node)
 				return (1);
 			node = node->next;
