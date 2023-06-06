@@ -9,8 +9,6 @@
  */
 int check_cycle(listint_t *list)
 {
-
-	int idx = 0, occurrence = 0;
 	listint_t *node, *head = list;
 
 
