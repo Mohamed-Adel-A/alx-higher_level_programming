@@ -14,7 +14,7 @@ int check_cycle(listint_t *list)
 		return (0);
 	while (list != NULL)
 	{
-		printf("(l= %d)\n", list->n);
+		printf("\n(l= %d)\n", list->n);
 		node = list->next;
 		while (node != NULL)
 		{
