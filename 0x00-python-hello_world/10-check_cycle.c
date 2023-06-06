@@ -15,7 +15,7 @@ int check_cycle(listint_t *list)
 	while (head != NULL)
 	{
 		node = head->next;
-		while (node !=NULL)
+		while (node != NULL)
 		{
 			if (head == node)
 				return (1);
