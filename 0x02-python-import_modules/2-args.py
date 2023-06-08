@@ -10,4 +10,4 @@ if __name__ == "__main__":
     elif args_len > 2:
         print("{:d} arguments:".format(args_len))
         for i in range(1, args_len):
-            print("{:d}: {}".format(args_len, argv[i]))
+            print("{:d}: {}".format(i, argv[i]))
