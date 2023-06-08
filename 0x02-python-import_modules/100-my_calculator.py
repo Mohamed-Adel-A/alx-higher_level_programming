@@ -8,7 +8,7 @@ if __name__ == "__main__":
         exit(1)
     a = int(argv[1])
     b = int(argv[3])
-    elif (argv[2] == '+'):
+    if (argv[2] == '+'):
         print("{:d} + {:d} = {:d}".format(a, b, add(a, b)))
         exit(0)
     elif (argv[2] == '-'):
