@@ -19,7 +19,7 @@ int check_cycle(listint_t *list)
 		n = 0;
 		while (node != list && n < i)
 		{
-			if (list == node && n > i)
+			if (list == node && n != i)
 				return (1);
 			node = node->next;
 			n++;
