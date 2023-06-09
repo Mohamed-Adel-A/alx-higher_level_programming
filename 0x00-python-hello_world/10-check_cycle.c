@@ -16,14 +16,13 @@ int check_cycle(listint_t *list)
 	while (list != NULL)
 	{
 		node = head;
-		occ = 0;
 		n = 0;
 		while (node != list && n < i)
 		{
 			if (list == node && n > i)
 				return (1);
 			node = node->next;
-			n++
+			n++;
 		}
 		i++;
 		list = list->next;
