@@ -17,10 +17,10 @@ int check_cycle(listint_t *list)
 	{
 		node = head;
 		n = 0;
-		printf("==== %d = %d ====", i, list->n);
-		while (node != list && n < i)
+		printf("\n==== %d = %d ====\n", i, list->n);
+		while (node != list && node && n < i)
 		{
-			printf("%d = %d", n, node->n);
+			printf("\n%d = %d\n", n, node->n);
 			if (list == node && n != i)
 				return (1);
 			node = node->next;
