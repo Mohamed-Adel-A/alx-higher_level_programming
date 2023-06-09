@@ -18,14 +18,14 @@ int check_cycle(listint_t *list)
 		node = head;
 		n = 0;
 		printf("\n==== %d = %d ====\n", i, list->n);
-		while (node != list && node && n < i)
+		/*while (node != list && node && n < i)
 		{
 			printf("\n%d = %d\n", n, node->n);
 			if (list == node && n != i)
 				return (1);
 			node = node->next;
 			n++;
-		}
+		}*/
 		i++;
 		list = list->next;
 	}
