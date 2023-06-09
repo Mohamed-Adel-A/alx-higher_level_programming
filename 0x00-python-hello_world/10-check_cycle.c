@@ -17,6 +17,8 @@ int check_cycle(listint_t *list)
 	{
 		node = head;
 		n = 0;
+		(void)node;
+		(void)n;
 		printf("\n==== %d = %d ====\n", i, list->n);
 		/*while (node != list && node && n < i)
 		{
