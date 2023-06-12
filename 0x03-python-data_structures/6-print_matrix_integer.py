@@ -6,4 +6,4 @@ def print_matrix_integer(matrix=[[]]):
                 print("{:d}".format(e), end="")
                 if(e != r[-1]):
                     print(" ")
-        print("")
+        print()
