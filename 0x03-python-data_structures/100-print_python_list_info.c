@@ -1,6 +1,6 @@
 /*#include <object.h>*/
-#include <Python.h>
-#include <listobject.h>
+/*#include <Python.h>
+#include <listobject.h>*/
 #include <stdlib.h>
 #include <stdio.h>
 #include <unistd.h>
