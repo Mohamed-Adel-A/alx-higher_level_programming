@@ -1,9 +1,11 @@
 /*#include <object.h>*/
 /*#include <Python.h>
+#include <Python.h>
 #include <listobject.h>*/
 #include <stdlib.h>
 #include <stdio.h>
 #include <unistd.h>
+#include <Python.h>
 
 /**
  * print_python_list_info - print_python_list_info
