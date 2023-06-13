@@ -10,7 +10,7 @@
 int is_palindrome(listint_t **head)
 {
 	if (head == NULL)
-		return (NULL);
+		return (0);
 	if (*head == NULL)
 		return (0);
 }
