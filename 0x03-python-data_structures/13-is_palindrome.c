@@ -1,6 +1,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <unistd.h>
+#include "lists.h"
 /**
  * is_palindrome - hecks if a singly linked list is a palindrome
  * @head: list head
