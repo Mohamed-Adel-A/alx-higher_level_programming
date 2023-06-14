@@ -11,4 +11,5 @@ def roman_to_int(roman_string):
         if letters_values[c] < prev:
             sum -= (prev * 2)
         sum += letters_values[c]
+        prev = letters_values[c]
     return (sum)
