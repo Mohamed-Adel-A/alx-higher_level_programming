@@ -8,5 +8,5 @@ def roman_to_int(roman_string):
     bigger = 1
     prv = 0
     for c in roman_string:
-        sum += letters_values[c]            
+        sum += letters_values[c]
     return (sum)
