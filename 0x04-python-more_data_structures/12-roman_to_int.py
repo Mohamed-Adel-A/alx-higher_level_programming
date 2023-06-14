@@ -6,9 +6,9 @@ def roman_to_int(roman_string):
                       "c": 100, "D": 500, "M": 1000}
     sum = 0
     bigger = 1
-    prv = 0
+    prv = 3000
     for c in roman_string:
-        if letters_values[c] < prev:
+        if letters_values[c] > prev:
             sum -= (prev * 2)
         sum += letters_values[c]
         prev = letters_values[c]
