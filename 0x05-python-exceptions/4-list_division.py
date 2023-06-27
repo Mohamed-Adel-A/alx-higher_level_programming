@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 def list_division(my_list_1, my_list_2, list_length):
-    result_len = 0
+    result_list = list()
 
     for i in range(list_lenght)
         try:
@@ -12,7 +12,7 @@ def list_division(my_list_1, my_list_2, list_length):
             print("division by 0")
             result = 0
         except TypeError:
-            print("wong type")
+            print("wrong type")
             result = 0
         finally:
             result_list.append(result)
