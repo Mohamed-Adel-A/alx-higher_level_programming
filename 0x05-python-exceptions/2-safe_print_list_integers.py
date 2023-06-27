@@ -7,6 +7,6 @@ def safe_print_list_integers(my_list=[], x=0):
             numbers_printed += 1
         except (TypeError, ValueError):
             continue
-        print("")
-        return (numbers_printed)
+    print("")
+    return (numbers_printed)
       
