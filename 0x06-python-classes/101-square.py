@@ -70,5 +70,6 @@ class Square:
                     str += " "
                 for j in range(self.size):
                     str += "#"
-                str += "\n"
+                if i != self.size - 1:
+                    str += "\n"
         return (str)
