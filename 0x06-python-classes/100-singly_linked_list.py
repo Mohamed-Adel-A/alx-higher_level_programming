@@ -26,3 +26,16 @@ class Node:
         if not isinstance(value, Node) and value is not None:
             raise TypeError("next_node must be a Node object")
         self.__next_node = value
+
+class SinglyLinkedList:
+    """ define a singly linked list """
+    def __init__(self):
+        self.__head = None
+
+    def sorted_insert(self, value):
+        new_node = Node(value)
+        if self.__head = None:
+            new_node = 
+
+    def __str__(self):
+        
