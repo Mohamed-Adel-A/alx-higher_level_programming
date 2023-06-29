@@ -33,6 +33,7 @@ class SinglyLinkedList:
         self.__head = None
 
     def sorted_insert(self, value):
+        """ insert node into linked list """
         new_node = Node(value)
         if self.__head = None:
             new_node.next_node = None
@@ -46,6 +47,7 @@ class SinglyLinkedList:
         node.next_node = new_node
 
     def __str__(self):
+        """ __str___ printable class """
         nodes_data = list()
         node = self.__head
         while (node is not None):
