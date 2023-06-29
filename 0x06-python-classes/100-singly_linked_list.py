@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """ define Singly linked list """
 
+
 class Node:
     """ define node class """
     def __init__(self, data, next_node=None):
@@ -28,6 +29,7 @@ class Node:
             raise TypeError("next_node must be a Node object")
         self.__next_node = value
 
+
 class SinglyLinkedList:
     """ define a singly linked list """
     def __init__(self):
@@ -37,7 +39,7 @@ class SinglyLinkedList:
     def sorted_insert(self, value):
         """ insert node into linked list """
         new_node = Node(value)
-        if self.__head == None:
+        if self.__head is None:
             new_node.next_node = None
             self.__head = new_node
         else:
