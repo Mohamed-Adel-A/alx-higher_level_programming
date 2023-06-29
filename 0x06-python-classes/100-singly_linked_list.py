@@ -53,6 +53,6 @@ class SinglyLinkedList:
         nodes_data = list()
         node = self.__head
         while (node is not None):
-            nodes_data.append(node.data)
+            nodes_data.append(str(node.data))
             node = node.next_node
         return ('/n'.join(nodes_data))
