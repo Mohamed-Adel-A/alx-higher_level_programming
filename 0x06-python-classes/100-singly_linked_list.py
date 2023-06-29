@@ -36,7 +36,7 @@ class SinglyLinkedList:
     def sorted_insert(self, value):
         """ insert node into linked list """
         new_node = Node(value)
-        if self.__head = None:
+        if self.__head == None:
             new_node.next_node = None
             self.__head = new_node
         else:
