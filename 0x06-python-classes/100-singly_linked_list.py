@@ -44,8 +44,8 @@ class SinglyLinkedList:
             while ((node.next_node is not None) and
                    (node.next_node.data < value)):
                 node = node.next_node
-        new_node.next_node = node.next_node
-        node.next_node = new_node
+            new_node.next_node = node.next_node
+            node.next_node = new_node
 
     def __str__(self):
         """ __str___ printable class """
