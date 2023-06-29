@@ -55,4 +55,4 @@ class SinglyLinkedList:
         while (node is not None):
             nodes_data.append(str(node.data))
             node = node.next_node
-        return ('/n'.join(nodes_data))
+        return ('\n'.join(nodes_data))
