@@ -42,6 +42,9 @@ class SinglyLinkedList:
         if self.__head is None:
             new_node.next_node = None
             self.__head = new_node
+        elif self.__head.data > value:
+            new_node.next_node = self.__head
+            self.__head = new_node
         else:
             node = self.__head
             while ((node.next_node is not None) and
