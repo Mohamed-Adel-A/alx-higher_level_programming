@@ -55,10 +55,10 @@ class Rectangle:
         else:
             for i in range(self.height):
                 for j in range(self.width):
-                    str.append(Rectangle.print_symbol)
+                    str.append(str(Rectangle.print_symbol))
                 if i != self.height - 1:
                     str.append("\n")
-            return (str)
+            return ("".join(str))
 
     def __repr__(self):
         """ ___repr__ """
