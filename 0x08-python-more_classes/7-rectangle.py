@@ -54,8 +54,7 @@ class Rectangle:
             return ("")
         else:
             for i in range(self.height):
-                for j in range(self.width):
-                    str.append(str(self.print_symbol))
+                [str.append(str(self.print_symbol)) for j in range(self.width)]
                 if i != self.height - 1:
                     str.append("\n")
             return ("".join(str))
