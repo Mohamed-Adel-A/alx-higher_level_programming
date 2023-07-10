@@ -1,1 +1,19 @@
-7-base_geometry.txt
+>>> base_geometry = __import__("7-base_geometry").BaseGeometry
+
+>>> obj = base_geometry()
+>>> obj.area()
+Traceback (most recent call last):
+...
+Exception: area() is not implemented
+
+>>> obj.area(12)
+Traceback (most recent call last):
+...
+TypeError: area() takes 1 positional argument but 2 were given
+
+>>> obj.integer_validator("integer", 45)
+
+>>> obj.integer_validator("obj", 0)
+Traceback (most recent call last):
+...
+ValueError: obj must be greater than 0
