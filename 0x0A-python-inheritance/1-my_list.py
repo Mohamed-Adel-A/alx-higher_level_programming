@@ -4,9 +4,6 @@
 
 class MyList(list):
     """  class MyList that inherits from list """
-    def __init__(self):
-        """ init class instance """
-        super().__init__()
 
     def print_sorted(self):
         """ print sorted list """
