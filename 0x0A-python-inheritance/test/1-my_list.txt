@@ -1,3 +1,5 @@
+>>> MyList = __import__('1-my_list').MyList
+
 Checking for crating list:
 	  >>> l = MyList()
 	  >>> l.print_sorted()
