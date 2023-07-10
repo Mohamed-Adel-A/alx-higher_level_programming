@@ -2,6 +2,7 @@
 """ 8. Rectangle """
 BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
+
 class Rectangle(BaseGeometry):
     """ subcalss from BaseGeometry """
     def __init__(self, width, height):
