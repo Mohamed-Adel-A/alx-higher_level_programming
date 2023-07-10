@@ -1,9 +1,9 @@
 #!/usr/bin/python3
 """ 8. Rectangle """
-Rectangle = __import__('9-rectangle.py').Rectangle
+Rectangle = __import__('9-rectangle').Rectangle
 
 
-class Square (Rectangle):
+class Square(Rectangle):
     """ subcalss from Rectangle """
     def __init__(self, size):
         """
