@@ -1,14 +1,14 @@
 >>> MyList = __import__('1-my_list').MyList
+>>> issubclass(MyList, list)
+True
 
-Checking for crating list:
-	  >>> l = MyList()
-	  >>> l.print_sorted()
-	  []
+>>> l = MyList()
+>>> l.print_sorted()
+[]
 
-Checking that appendng works:
-	  >>> l.append(0)
-	  >>> l.append(1)
-	  >>> l.append(2)
-	  >>> l.append(3)
-	  >>> print(l)
-	  [1, 2, 3, 4]
+>>> l.append(0)
+>>> l.append(1)
+>>> l.append(2)
+>>> l.append(3)
+>>> print(l)
+[1, 2, 3, 4]
