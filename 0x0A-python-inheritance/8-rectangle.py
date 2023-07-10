@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 """ 8. Rectangle """
+
+
 class BaseGeometry():
     """ empty class BaseGeometry. """
     def area(self):
