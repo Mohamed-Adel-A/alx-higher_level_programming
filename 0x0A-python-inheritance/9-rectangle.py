@@ -20,5 +20,5 @@ class Rectangle(BaseGeometry):
 
     def __str__(self):
         """ ___str___ implementation """
-        str = "[Rectangle] " + str(self.__width) + "/" + str(self.__height)
-        return (str)
+        s = "[Rectangle] " + str(self.__width) + "/" + str(self.__height)
+        return (s)
