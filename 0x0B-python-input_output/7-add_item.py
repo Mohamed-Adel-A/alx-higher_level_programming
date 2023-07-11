@@ -17,4 +17,3 @@ if __name__ == "__main__":
 
     json_list += sys.argv[1:]
     save_to_json_file(json_list, "add_item.json")
-        
