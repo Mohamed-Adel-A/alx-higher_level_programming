@@ -5,8 +5,9 @@ and then save them to a file
 """
 import json
 import sys
-from 5-save_to_json_file import save_to_json_file
-from 6-load_from_json_file import load_from_json_file
+save_to_json_file = __import__('7-save_to_json_file').save_to_json_file
+load_from_json_file = __import__('8-load_from_json_file').load_from_json_file
+
 
 if __name__ == "__main__":
     try:
@@ -14,6 +15,6 @@ if __name__ == "__main__":
     except FileNotFoundError:
         l = []
 
-    l += argv[1:]
+    l += sys.argv[1:]
     save_to_json_file(l, "add_item.json")
         
