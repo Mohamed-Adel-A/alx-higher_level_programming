@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """
 models/base.py
+Base class
 """
 
 
