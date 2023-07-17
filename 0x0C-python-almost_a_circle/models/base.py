@@ -112,7 +112,8 @@ class Base:
                 elif (cls.__name__ == "Square"):
                     names = ["id", "size", "x", "y"]
                 reader = csv.DictReader(f, fieldnames=names)
-                list_dicts = [dict([key, int(value)] for key, value in obj.items())
+                list_dicts = [dict([key, int(value)]
+                              for key, value in obj.items())
                               for obj in reader]
                 return [cls.create(**d) for d in list_dicts]
         except FileNotFoundError:
