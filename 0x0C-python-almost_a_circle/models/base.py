@@ -93,7 +93,7 @@ class Base:
             else:
                 if (cls.__name__ == "Rectangle"):
                     names = ["id", "width", "height", "x", "y"]
-                elif (cls.__name == "Square"):
+                elif (cls.__name__ == "Square"):
                     names = ["id", "size", "x", "y"]
                 w = csv.DictWriter(f, fieldnames=names)
                 for o in list_objs:
