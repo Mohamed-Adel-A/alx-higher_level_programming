@@ -11,11 +11,12 @@ class Base:
     base class
     """
     __no_objects = 0
+
     def __init__(self, id=None):
         """
         initializing an instance
         """
-        if id != None:
+        if id is not None:
             self.id = id
         else:
             Base.__no_objects += 1
@@ -78,4 +79,3 @@ class Base:
                 return [cls.create(**dict) for dict in list_dictionaries]
         except FileNotFoundError:
             return (list())
-            
