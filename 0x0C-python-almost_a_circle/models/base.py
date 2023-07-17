@@ -3,6 +3,7 @@
 models/base.py
 Base class
 """
+import json
 
 
 class Base:
