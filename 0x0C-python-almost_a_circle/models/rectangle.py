@@ -3,6 +3,7 @@
 models/rectangle.py
 rectangle class file
 """
+from models.base import Base
 
 
 class Rectangle(Base):
