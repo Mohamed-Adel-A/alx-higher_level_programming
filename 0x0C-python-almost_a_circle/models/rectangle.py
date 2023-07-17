@@ -79,7 +79,7 @@ class Rectangle(Base):
             for h in range(self.width):
                 print("#", end="")
             print("")
-     
+    
     def __str___(self):
         """ string representing the instance """
         return ("[Rectangle] ({}) {}/{} - {}/{}"
