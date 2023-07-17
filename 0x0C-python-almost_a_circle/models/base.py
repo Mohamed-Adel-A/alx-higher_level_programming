@@ -7,6 +7,9 @@ import json
 
 
 class Base:
+    """
+    base class
+    """
     __no_objects = 0
     def __init__(self, id=None):
         """
