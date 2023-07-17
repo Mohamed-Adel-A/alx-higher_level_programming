@@ -56,4 +56,10 @@ class Base:
         """
         returns an instance with all attributes already set:
         """
+        if (cls.__name__ == "Rectangle"):
+            newobj = cls(1, 1)
+        elif (cls.__name__ == "Square"):
+            newobj = cls(1)
+        newobj.update(**dictionary)
+        return (newobj)
         
