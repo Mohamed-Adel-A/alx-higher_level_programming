@@ -109,7 +109,7 @@ class Base:
             with open(file_name, newline="") as f:
                 if (cls.__name__ == "Rectangle"):
                     names = ["id", "width", "height", "x", "y"]
-                elif (cls.__name == "Square"):
+                elif (cls.__name__ == "Square"):
                     names = ["id", "size", "x", "y"]
                 reader = csv.DictReader(f, fieldnames=names)
                 list_dicts = [dict([key, int(value)] for key, value in obj.items())
