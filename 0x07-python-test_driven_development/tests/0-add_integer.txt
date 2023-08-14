@@ -16,3 +16,11 @@ Testing add_integer function
 
   >>> add_integer(100.3, -2)
   98
+
+  >>> add_integer("a", 5)
+  Traceback (most recent call last):
+  TypeError: a must be an integer
+
+  >>> add_integer(5, "a")
+  Traceback (most recent call last):
+  TypeError: b must be an integer
