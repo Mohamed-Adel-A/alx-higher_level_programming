@@ -7,6 +7,7 @@ a function that divides all elements of a matrix.
 def matrix_divided(matrix, div):
     """a function that divides all elements of a matrix."""
 
+    print(type(matrix))
     if (type(matrix) is not list) or (matrix == []):
         raise TypeError(
             "matrix must be a matrix (list of lists) of integers/floats")
