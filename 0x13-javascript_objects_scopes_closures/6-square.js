@@ -6,10 +6,9 @@ class Square extends Square5 {
   charPrint (c) {
     if (c === undefined) {
       c = 'X';
-    } else {
-      for (let i = 0; i < this.height; i++) {
-        console.log(c.repeat(this.width));
-      }
+    }
+    for (let i = 0; i < this.height; i++) {
+      console.log(c.repeat(this.width));
     }
   }
 }
