@@ -10,4 +10,3 @@ if (isNaN(arg))
     console.log('X'.repeat(arg));
   }
 }
-
