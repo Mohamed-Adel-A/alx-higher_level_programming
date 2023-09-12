@@ -7,7 +7,7 @@ if (argCount <= 2) {
   const args = process.argv.slice(2);
   const nums = args.map(Number);
 
-  nums.sort(funvtion (a, b) {return (b - a);});
+  nums.sort(function (a, b) {return (b - a);});
 
   console.log(nums[1]);
 }
