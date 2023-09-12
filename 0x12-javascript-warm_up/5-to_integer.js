@@ -7,4 +7,3 @@ if (isNaN(number) || number === undefined) {
 } else {
   console.log('My number:', parseInt(number));
 }
-
