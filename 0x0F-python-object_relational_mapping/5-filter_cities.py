@@ -14,7 +14,7 @@ if __name__ == "__main__":
                          user=db_user, passwd=db_passwd,
                          database=db_name)
     cur = db.cursor()
-    cur.execute("""SELECT c.id, c.name, s.name
+    cur.execute("""SELECT c.name
                    FROM cities c
                    INNER JOIN states s 
                    ON c.state_id=s.id
