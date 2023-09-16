@@ -33,7 +33,7 @@ if __name__ == "__main__":
                   .filter(State.id == 2)
                   .first())
 
-    if query_data in not None:
+    if query_data is not None:
         query_data.name = "New Mexico"
         session.commit()
 
