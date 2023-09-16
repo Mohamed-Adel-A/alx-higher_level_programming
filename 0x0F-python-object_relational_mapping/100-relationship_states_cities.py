@@ -18,7 +18,9 @@ if __name__ == "__main__":
     db_name = sys.argv[3]
 
     # create an engine
-    engine = create_engine("mysql+mysqldb://{}:{}@localhost/{}".format(db_user, db_passwd, db_name), pool_pre_ping=True)
+    engine = create_engine("mysql+mysqldb://{}:{}@localhost/{}"
+                           .format(db_user, db_passwd, db_name),
+                           pool_pre_ping=True)
 
     # generate database schema
     Base.metadata.create_all(engine)
