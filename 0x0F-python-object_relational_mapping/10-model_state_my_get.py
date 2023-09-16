@@ -30,7 +30,7 @@ if __name__ == "__main__":
     session = Session()
 
     # query
-    state_name = sys.arg[4]
+    state_name = sys.argv[4]
     query_data = (session.query(State)
                   .filter(State.name == state_name)
                   .first())
