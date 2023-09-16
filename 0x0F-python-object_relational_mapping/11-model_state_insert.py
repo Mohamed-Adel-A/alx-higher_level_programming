@@ -34,7 +34,6 @@ if __name__ == "__main__":
     session.commit()
 
     # query
-    state_name = sys.argv[4]
     query_data = (session.query(State)
                   .filter(State.name == "Louisiana")
                   .first())
