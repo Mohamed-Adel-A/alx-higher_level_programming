@@ -33,7 +33,7 @@ if __name__ == "__main__":
     state_name = sys.arg[4]
     query_data = (session.query(State)
                   .filter(State.name == state_name)
-                  .order_by(State.id).all())
+                  .first())
 
     # print
     if qurey_data is None:
