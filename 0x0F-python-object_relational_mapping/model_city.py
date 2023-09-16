@@ -1,0 +1,19 @@
+#!/usr/bin/python3
+"""
+contains the class definition of a City
+"""
+from sqlalchemy.ext.declarative import declarative_base
+from sqlalchemy import Column, Integer, String
+
+Base = declarative_base()
+
+
+class City(Base):
+    """
+    class definition of a State
+    """
+    __tablename__ = "states"
+    id = Column(Integer, primary_key=True, unique=True,
+                nullable=False, autoincrement=True)
+    name = Column(String(128), nullable=False)
+    state_id = (Integer, nullable=False, ForeignKey('states.id'))
