@@ -1,4 +1,3 @@
-
 #!/usr/bin/python3
 """
 a script that creates the State “California” with the City “San Francisco”
