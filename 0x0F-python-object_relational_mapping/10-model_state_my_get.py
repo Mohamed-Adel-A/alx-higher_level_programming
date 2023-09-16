@@ -39,6 +39,6 @@ if __name__ == "__main__":
     if qurey_data is None:
         print("Not found")
     else:
-        print(states.id)
+        print(qurey_data.id)
 
     session.close()
