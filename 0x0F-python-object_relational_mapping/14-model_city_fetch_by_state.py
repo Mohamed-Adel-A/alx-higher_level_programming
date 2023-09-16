@@ -34,8 +34,9 @@ if __name__ == "__main__":
                   .filter(State.id == City.state_id)
                   .all())
 
-    for row in query_data:
-        print(row)
+    for row_state, row_city in query_data:
+        print(row_state)
+        print(row_city)
 
     session.commit()
     session.close()
