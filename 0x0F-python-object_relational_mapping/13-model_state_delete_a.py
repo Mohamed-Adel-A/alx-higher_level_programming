@@ -29,13 +29,13 @@ if __name__ == "__main__":
     # create a Session
     session = Session()
 
-    # update state
+    # delete state with letter a
     query_data = (session.query(State)
                   .filter(State.name.like('%a%'))
                   .all())
 
     for row in query_data:
         session.delete(row)
-    
+
     session.commit()
     session.close()
