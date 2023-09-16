@@ -36,9 +36,9 @@ if __name__ == "__main__":
                   .first())
 
     # print
-    if qurey_data is None:
+    if query_data is None:
         print("Not found")
     else:
-        print(qurey_data.id)
+        print(query_data.id)
 
     session.close()
