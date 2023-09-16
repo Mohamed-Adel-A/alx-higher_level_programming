@@ -10,9 +10,9 @@ Base = declarative_base()
 
 class City(Base):
     """
-    class definition of a State
+    class definition of a City
     """
-    __tablename__ = "states"
+    __tablename__ = "cities"
     id = Column(Integer, primary_key=True, unique=True,
                 nullable=False, autoincrement=True)
     name = Column(String(128), nullable=False)
