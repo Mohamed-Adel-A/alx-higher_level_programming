@@ -18,7 +18,7 @@ if __name__ == "__main__":
     # create an engine
     engine = create_engine("mysql+mysqldb://{}:{}@localhost/{}"
                           .format(db_user, db_passwd, db_name),
-                          pool_per_ping=True)
+                          pool_pre_ping=True)
 
     # generate database schema
     Base.meatdate.create_all(engine)
