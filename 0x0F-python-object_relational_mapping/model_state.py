@@ -12,7 +12,7 @@ class State(Base):
     """
     class definition of a State
     """
-    __tablename__= "states"
+    __tablename__ = "states"
     id = Column(Integer, primary_key=True, unique=True,
                 nullable=False, autoincrement=True)
     name = Column(String(128), nullable=False)
