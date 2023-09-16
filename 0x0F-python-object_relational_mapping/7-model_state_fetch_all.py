@@ -21,7 +21,7 @@ if __name__ == "__main__":
                           pool_pre_ping=True)
 
     # generate database schema
-    Base.meatdate.create_all(engine)
+    Base.metadata.create_all(engine)
 
     # create a configured "Session" class
     Session = sessionmaker(bind=engine)
