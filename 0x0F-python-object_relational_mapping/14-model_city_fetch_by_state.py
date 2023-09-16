@@ -35,8 +35,8 @@ if __name__ == "__main__":
                   .all())
 
     for row_state, row_city in query_data:
-        print(row_state)
-        print(row_city)
+        print("{}: ({}) {}"
+              .format(row_state.name, row_city.id, row_city.name))
 
     session.commit()
     session.close()
