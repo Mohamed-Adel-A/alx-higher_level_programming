@@ -2,7 +2,7 @@
 """
 contains the class definition of a City
 """
-from relationship_state import Base 
+from relationship_state import Base
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy import Column, Integer, String, ForeignKey
 
