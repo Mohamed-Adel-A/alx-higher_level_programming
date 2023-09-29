@@ -12,7 +12,7 @@ if __name__ == "__main__":
     import sys
     
 
-    values = {"email": sys.argv[1]}
+    values = {"email": sys.argv[2]}
     data = urllib.parse.urlencode(values)
     data = data.encode('ascii')
     with request.urlopen(sys.argv[1], data) as response:
