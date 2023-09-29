@@ -8,8 +8,9 @@ and displays the body of the response (decoded in utf-8)
 
 if __name__ == "__main__":
     from urllib import request
-    import sys
     from urllib import parse
+    import sys
+    
 
     values = {"email": sys.argv[1]}
     data = urllib.parse.urlencode(values)
