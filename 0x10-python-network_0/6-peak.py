@@ -13,3 +13,7 @@ def find_peak(list_of_integers):
         return peek
     if len(list_of_integers) == 0:
         return peek
+    if len(list_of_integers) == 1:
+        return list_of_integers[0]
+    if len(list_of_integers) == 2:
+        return max(list_of_integers)
