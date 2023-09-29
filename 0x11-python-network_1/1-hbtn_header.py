@@ -12,5 +12,5 @@ if __name__ == "__main__":
     import sys
 
     with request.urlopen(sys.argv[1]) as response:
-        req_id = response.header["X-Request-Id"]
+        req_id = response.headers["X-Request-Id"]
         print(req_id)
