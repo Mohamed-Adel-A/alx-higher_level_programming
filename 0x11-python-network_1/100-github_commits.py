@@ -15,6 +15,9 @@ if __name__ == "__main__":
              .format(owner, repo_name))
     r = requests.get(r_url)
     data = r.json()
+    i = 0
     for commit in data:
+        if i == 10:
+            break
         print("{}: {}".format(commit['sha'],
                               commit['commit']['author']['name']))
