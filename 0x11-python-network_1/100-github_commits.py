@@ -16,7 +16,5 @@ if __name__ == "__main__":
     r = requests.get(r_url)
     data = r.json()
     for commit in data:
-        print("{}: {}"
-             .format(commit['sha'],
-                    commit['commit']['author']['name'])
-             )
+        print("{}: {}".format(commit['sha'],
+                              commit['commit']['author']['name']))
