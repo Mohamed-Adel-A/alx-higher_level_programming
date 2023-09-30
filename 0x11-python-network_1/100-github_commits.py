@@ -21,3 +21,4 @@ if __name__ == "__main__":
             break
         print("{}: {}".format(commit['sha'],
                               commit['commit']['author']['name']))
+        i += 1
