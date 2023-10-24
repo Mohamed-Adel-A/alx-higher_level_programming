@@ -17,6 +17,6 @@ request(API_url, function (error, response, body) {
       return film.characters.find((character) => character.endsWith('/18/'))
         ? count + 1
         : count;
-    }, 0);
+    }, 0));
   }
 });
