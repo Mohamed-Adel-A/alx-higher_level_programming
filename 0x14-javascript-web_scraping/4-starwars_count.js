@@ -7,7 +7,7 @@
 const request = require('request');
 const APIurl = process.argv[2];
 
-request(API_url, function (error, response, body) {
+request(APIurl, function (error, response, body) {
   if (error) {
     console.log(error);
   } else {
