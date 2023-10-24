@@ -4,9 +4,8 @@
 // - Wedge Antilles is character ID 18 - your script must use this ID for filtering the result of the API
 // - You must use the module request
 
-
 const request = require('request');
-const API_url = process.argv[2];
+const APIurl = process.argv[2];
 
 request(API_url, function (error, response, body) {
   if (error) {
