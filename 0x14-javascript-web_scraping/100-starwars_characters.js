@@ -6,7 +6,7 @@
 // - You must use the module request
 
 const request = require('request');
-const APIurl = 'https://swapi-api.hbtn.io/api/films/' + process.argv[2];
+const APIurl = 'https://swapi-api.alx-tools.com/api/films/' + process.argv[2];
 
 request.get(APIurl, function (error, response, body) {
   if (error) {
