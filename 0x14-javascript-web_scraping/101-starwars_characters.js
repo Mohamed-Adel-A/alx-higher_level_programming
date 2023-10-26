@@ -14,8 +14,8 @@ function getcharactersNames (charactersData, i) {
       console.log(error);
     } else {
       console.log(JSON.parse(body).name);
-      if (i + 1  < charactersData.length) {
-        getcharactersNames(charactersData, i + 1)
+      if (i + 1 < charactersData.length) {
+        getcharactersNames(charactersData, i + 1);
       }
     }
   });
@@ -26,6 +26,6 @@ request.get(APIurl, function (error, response, body) {
     console.log(error);
   } else {
     const charactersData = JSON.parse(body).characters;
-    getcharactersNames(charactersData, 0)
+    getcharactersNames(charactersData, 0);
   }
 });
