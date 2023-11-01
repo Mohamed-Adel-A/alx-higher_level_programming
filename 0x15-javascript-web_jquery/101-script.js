@@ -4,7 +4,7 @@ $("DIV#add_item").click(function() {
 });
 
 $("DIV#remove_item").click(function() {
-    $("UL.my_list:last-child").remove();
+    $("UL.my_list:last").remove();
 });
 
 $("DIV#clear_list").click(function() {
