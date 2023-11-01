@@ -5,4 +5,5 @@ $("DIV#toggle_header").click(function() {
   } else if($("header").hasClass("green")) {
     $("header").removeClass("green");
     $("header").addClass("red");
+  }
 });
